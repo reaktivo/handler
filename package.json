@@ -2,7 +2,7 @@
   "author": "Marcel Miranda Ackerman <m@reaktivo.com> (http://reaktivo.com)",
   "name": "handler",
   "description": "Handler is an Express routing helper",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "repository": {
     "url": ""
   },
