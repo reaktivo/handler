@@ -17,5 +17,10 @@
     "express": "2.5.x"
   },
   "main": "lib/handler",
+  "scripts": {
+    "pretest": "cake build",
+    "prepublish": "cake build",
+    "test": "mocha --compilers coffee:coffee-script --reporter spec --no-colors"
+  },
   "optionalDependencies": {}
 }
