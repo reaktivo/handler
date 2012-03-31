@@ -8,10 +8,10 @@ findExecutable = (executable, callback) ->
 build = (callback) ->
   exec 'mkdir -p lib', (err, stdout, stderr) ->
     throw new Error(err) if err
-    exec "coffee --compile --output lib/ src/", (err, stdout, stderr) ->
+    exec "coffee --bare --compile --output lib/ src/", (err, stdout, stderr) ->
       throw new Error(err) if err
       callback() if callback
-      
+
 removeJS = (callback) ->
   exec 'rm -fr lib/', (err, stdout, stderr) ->
     throw new Error(err) if err
@@ -21,7 +21,7 @@ checkDependencies = (callback) ->
   findExecutable 'coffee', ->
     findExecutable 'vows', (err, stdout) ->
       (callback or console.log) (stdout)
-      
+
 test = (callback = console.log) ->
   checkDependencies ->
     build ->
