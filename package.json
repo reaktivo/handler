@@ -12,7 +12,7 @@
     "test": "mocha --compilers coffee:coffee-script --reporter spec --no-colors"
   },
   "engines": {
-    "node": "~0.4.2"
+    "node": ">=0.4.2"
   },
   "dependencies": {},
   "devDependencies": {
