@@ -12,7 +12,8 @@ Handler is written in coffeescript by [Marcel Miranda](http://reaktivo.com).
 
 ## Usage
 
-    # First require handler
+    # First require express then handler
+    require 'express'
     require 'handler'
 
     # Create express app
