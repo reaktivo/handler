@@ -1,5 +1,7 @@
 # Handler
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/reaktivo/handler.svg)](https://greenkeeper.io/)
+
 Handler is a tiny node module that all it does is monkey-patches [Express](http://expressjs.com), allowing you to write unRESTful route objects
 Handler is written in coffeescript by [Marcel Miranda](http://reaktivo.com).
 
